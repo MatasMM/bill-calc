@@ -11,9 +11,9 @@ function calculateTip() {
     const totalTip = Math.floor((bill * tipPercentage)) / 100;
     const totalToPay = bill + totalTip;
     
-    document.getElementById('tipAmount').innerText = totalTip;
-    document.getElementById('totalPay').innerText = totalToPay;
-
+    document.getElementById('tipAmount').innerText = totalTip.toFixed(2) + "€";
+    document.getElementById('totalPay').innerText = totalToPay.toFixed(2) + "€";
+    
 }
 
 function resetCalculator() {   document.getElementById("bill").value = "";   document.getElementById("percentageTip").value = "";   document.getElementById("tipAmount").innerText = "";   document.getElementById("totalPay").innerText = ""; }

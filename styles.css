@@ -91,3 +91,7 @@ h1 {
     display: flex;
     flex-direction: row;
 }
+
+#tipAmount, #totalPay {
+    margin-left: 10px;
+}
